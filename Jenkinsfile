@@ -12,7 +12,7 @@ pipeline {
 
 	stage('RunSCAAnalysisUsingSnyk') {
             steps {		
-		    snykSecurity(snykInstallation: 'snyk@latest',snykTokenId: 'SNYK_TOKEN')
+		    snykSecurity(snykInstallation: 'snyk@latest',snykTokenId: 'SNYK_API_TOKEN')
 	    }
     }
 
